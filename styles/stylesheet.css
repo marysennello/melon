@@ -7,7 +7,7 @@
 */
 * {
   box-sizing: border-box;
-  font-family: helvetica, sans-serif;
+  font-family: "Delius", helvetica, sans-serif;
   line-height: 110%;
 }
 
@@ -15,18 +15,24 @@ header {
   background-color: #d9ead3;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-left: 7rem;
-  background-image: url("#");
+  padding-left: 13rem;
+  background-image: url("https://i.imgur.com/z2jrUUr.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: contain;
+  background-position: left;
 }
-
+p {
+  font-align: center;
+}
 h1, h2 {
   font-family: "Yatra One", cursive;
 }
 
 h1 {
   font-size: 3rem;
+  color: #ead1dc;
+  text-shadow: 3px 3px 6px #000000;
+
 }
 h2 {
   text-align: center;
@@ -34,21 +40,24 @@ h2 {
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: stretch;
 }
 .box {
-  width: 27%;
+  height: auto;
   border-radius: 3rem;
   background-color: #d0e0e3;
-  margin: 2rem;
+  margin: 1.5rem;
   padding: 2rem;
 
 }
-.fa-fishing-rod {
+.fa-face-grin-hearts, .fa-fish, .fa-paw{
+  color: #f4cccc;
   font-size: 2rem;
-  color: white;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 li {
   width: 100%;
@@ -59,12 +68,50 @@ li {
   justify-content: space-between;
 }
 
-h2:hover {
+ h2:hover {
   transition-duration: 2s;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ead1dc;
   background-color: #000000;
   border-radius: 3rem;
-  padding: 1rem;
+  padding: 0.5rem;
 
+}
+.box2 {
+  height: auto;
+  border-radius: 3rem;
+  background-color: #f4cccc;
+  margin: 1.5rem;
+  padding: 3rem;
+
+}
+a {
+  color:#345D6A;
+  font-weight: bolder;
+}
+a:hover {
+  text-decoration-style: wavy;
+}
+
+aside {
+  float: right;
+  height: 20rem;
+}
+img {
+  height: 20rem;
+  border-radius: 3rem;
+  border: 3px solid #d9ead3;
+}
+section {
+  clear: left;
+  width: 57%;
+  background-color: #f4cccc;
+  border-radius: 3rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+footer {
+  background-color: #cfe2f3;
+  padding: 5rem;
+  text-align: center;
 }
