@@ -22,7 +22,7 @@ header {
   background-position: left;
 }
 p {
-  font-align: center;
+  text-align: center;
 }
 h1, h2 {
   font-family: "Yatra One", cursive;
